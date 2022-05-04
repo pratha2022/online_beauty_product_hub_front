@@ -70,7 +70,7 @@ const Contact = () => {
   return (
     <div className='contacts'>
       <div>
-        <img src={contact} className="eyes" />
+        <img src={contact} alt="z" className="eyes" />
       </div>
       <div className='heading'>
         <h3>Contact</h3>

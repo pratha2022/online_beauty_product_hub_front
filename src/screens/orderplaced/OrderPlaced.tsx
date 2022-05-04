@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import shop12 from '../../images/shop12.jpg';
 import './orderplaced.css'
@@ -16,7 +16,7 @@ const OrderPlaced = () => {
     return (
         <div className='details'>
             <div>
-                <img src={shop12} className="contact1" />
+                <img src={shop12} alt="z" className="contact1" />
             </div>
             <div className='heading'>
                 <h4>Order Placed</h4>
@@ -41,7 +41,7 @@ const OrderPlaced = () => {
                                         total = total + (parseInt(item?.qty) * parseInt(item?.product?.data?.attributes?.price));
                                         return (
                                             <tr key={item.id}>
-                                                <td><img className='shop5' src={`${URL}${item?.product?.data?.attributes?.productImage?.data?.attributes?.url}`} style={{ "border": "1px solid lightgray", 'width': '50px', 'height': '50px' }} /></td>
+                                                <td><img alt="a" className='shop5' src={`${URL}${item?.product?.data?.attributes?.productImage?.data?.attributes?.url}`} style={{ "border": "1px solid lightgray", 'width': '50px', 'height': '50px' }} /></td>
                                                 <td>{item?.product?.data?.attributes?.productTitle}</td>
                                                 <td>{item?.qty}</td>
                                                 <td>{parseInt(item?.product?.data?.attributes?.price) * parseInt(item?.qty)}</td>

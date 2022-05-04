@@ -1,11 +1,10 @@
 import shop12 from '../../images/shop12.jpg';
-import { useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { productAction } from '../../redux/action/ProductAction';
 import { Counter } from '../../components/counter/Counter';
-import { cartAction, cartId, cartIdAction, cartUpdate } from '../../redux/action/CartAction';
-import { cartGetAPI, cartPopulateAPI } from '../../redux/service/cartservice';
+import { cartAction, cartId, cartUpdate } from '../../redux/action/CartAction';
 const Product = () => {
     const [num, setNum] = useState(1);
     const incNum = () => {
@@ -49,7 +48,7 @@ const Product = () => {
     return (
         <div className='details'>
             <div>
-                <img src={shop12} className="contact1" />
+                <img src={shop12} alt="a" className="contact1" />
             </div>
             <div className='heading'>
                 <h3>Product Details</h3>
@@ -57,7 +56,7 @@ const Product = () => {
             </div>
             <div className='rowProduct d-flex' style={{ 'marginBottom': '20px' }}>
                 <div className='col-6'>
-                    <img className='shop5' src={`${URL}${product?.attributes?.productImage?.data?.attributes?.url}`} style={{ "border": "1px solid lightgray", 'width': '250px', 'height': '250px' }} />
+                    <img className='shop5' alt="a" src={`${URL}${product?.attributes?.productImage?.data?.attributes?.url}`} style={{ "border": "1px solid lightgray", 'width': '250px', 'height': '250px' }} />
                 </div>
                 <div className='col-5 ' style={{ "display": "table", "textAlign": "initial" }}>
                     <h2 className='title' style={{ "display": "contents" }}>{product?.attributes?.productTitle.toUpperCase()}

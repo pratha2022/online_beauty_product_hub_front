@@ -6,7 +6,6 @@ import { registerAction } from '../../redux/action/RegisterAction';
 import { Row, Col } from 'react-bootstrap';
 const Register = () => {
   const navigation = useNavigate()
-  const login = useSelector((state: any) => state.data)
   const [inputs, setInputs]: any = useState({
     username: '',
     email: '',

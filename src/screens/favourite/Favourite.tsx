@@ -24,7 +24,7 @@ const Favourite = () => {
     return (
         <div className='cart'>
             <div>
-                <img src={shop12} className="contact1" />
+                <img src={shop12} alt="z" className="contact1" />
             </div>
             <div className='heading'>
                 <h3>Favourite</h3>

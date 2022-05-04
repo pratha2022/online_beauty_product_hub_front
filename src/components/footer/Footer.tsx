@@ -39,24 +39,24 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col">
-            <img src={pic1} />
+            <img src={pic1} alt="z" />
           </div>
           <div className="col">
-            <img src={pic2} />
+            <img src={pic2} alt="z" />
           </div>
           <div className="col">
-            <img src={pic3} />
+            <img src={pic3} alt="z"/>
           </div>
           <div className="col">
-            <img src={pic4} />
+            <img src={pic4} alt="z"/>
           </div>
           <div className="col">
-            <img src={pic5} />
+            <img src={pic5} alt="z"/>
           </div>
         </div>
       </div>
       <div className='footerline'>
-        <p>Copyright © {year} All rights reserved | This template is made with 💗 by <a>Colorlib</a> </p>
+        <p>Copyright © {year} All rights reserved | This template is made with 💗 by <a>Pratha</a> </p>
         <div className='social'>
           <i className="fa fa-facebook footercard" aria-hidden="true"  /> &emsp;
           <i className="fa fa-twitter footercard" aria-hidden="true"  />&emsp;

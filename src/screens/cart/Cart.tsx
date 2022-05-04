@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import './cart.css'
 import shop12 from '../../images/shop12.jpg';
-import { useLocation, useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { cartAction, cartDelete } from '../../redux/action/CartAction';
 const Cart = () => {
@@ -20,7 +20,7 @@ const Cart = () => {
   return (
     <div className='cart'>
       <div>
-        <img src={shop12} className="contact1" />
+        <img src={shop12} alt='z' className="contact1" />
       </div>
       <div className='heading'>
         <h3>Shopping Cart</h3>

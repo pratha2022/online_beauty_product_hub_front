@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { LoginAction } from '../../redux/action/LoginAction';
 import './login.css';
 import { Row, Col } from 'react-bootstrap';

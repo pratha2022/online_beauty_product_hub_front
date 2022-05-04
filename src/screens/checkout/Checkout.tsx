@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { cartAction, cartIdAction } from '../../redux/action/CartAction';
 import { Row, Col } from 'react-bootstrap';
-import { orderplacedAPI } from '../../redux/service/cartservice';
 const Checkout = () => {
   const [inputs, setInputs]: any = useState({
     email: '',

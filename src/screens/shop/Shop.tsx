@@ -1,5 +1,5 @@
 import './shop.css'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import eyes from '../../images/abouthead.jpg'
 import Select from 'react-select'
 import { useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom'
@@ -125,7 +125,7 @@ const Shop = () => {
   return (
     <div className='shop'>
       <div>
-        <img src={eyes} className="eyes" />
+        <img src={eyes} alt="a" className="eyes" />
       </div>
       <div className='heading'>
         <h3>Shop</h3>
