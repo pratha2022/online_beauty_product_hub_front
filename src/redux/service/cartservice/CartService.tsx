@@ -38,7 +38,7 @@ export const cartPopulateAPI = (user_id: any) => {
 export const orderplacedAPI = (cart: any) => {
     cart.map((item: any) => {
         if (item.attributes.isOrderPlaced === false)
-            return item.attributes.isOrderPlaced === true
+            return item.attributes.isOrderPlaced = true
     })
     const user_id = localStorage.getItem('user_details')
    return axios.get(`/carts?populate=user_id,product_list.product.productImage,product_list.product&filters[user_id]=${user_id}`)

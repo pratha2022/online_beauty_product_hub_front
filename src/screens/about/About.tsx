@@ -18,10 +18,10 @@ const About = () => {
       </div>
       <div className='heading'>
         <h3>About us</h3>
-        <p ><a href='#' className='text'>Home</a> | About</p>
+        <p ><a href='https://maps.google.com/' className='text'>Home</a> | About</p>
       </div>
       <div className="clearfix">
-        <img src={brush} className="col-md-6 float-md-end mb-3 ms-md-3" alt="..." />
+        <img src={brush} className="col-md-6 float-md-end mb-3 ms-md-3" alt="a" />
         <p className='text'>MAKE YOUR FACE</p>
         <h1>the center of attention</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />Possimus pariatur ullam soluta ipsam voluptatibus atque<br /> reprehenderit similique odit minus earum maxime id nisi suscipit iure sequi, officia,<br /> optio tempore. Corporis!</p>

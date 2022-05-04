@@ -129,7 +129,7 @@ const Shop = () => {
       </div>
       <div className='heading'>
         <h3>Shop</h3>
-        <p><a href='#' className='text'>Home</a> | Shop</p>
+        <p><a href='https://maps.google.com/' className='text'>Home</a> | Shop</p>
       </div>
       <div className='card-group'>
         <div className='col-3' style={{ fontSize: 'x-large' }}><strong>OUR PRODUCTS</strong></div>
