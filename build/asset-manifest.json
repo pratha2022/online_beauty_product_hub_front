@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e31c361b.css",
+    "main.js": "/static/js/main.41509af4.js",
+    "static/js/787.68ad8508.chunk.js": "/static/js/787.68ad8508.chunk.js",
+    "static/media/pic3.jpg": "/static/media/pic3.f9272010a8bc3ed228ad.jpg",
+    "static/media/shop12.jpg": "/static/media/shop12.456f6b4958f44a120c78.jpg",
+    "static/media/ab1.jpg": "/static/media/ab1.b13e7333522dcf82505d.jpg",
+    "static/media/homemakeup1.png": "/static/media/homemakeup1.45cfd008295ff5bfcf37.png",
+    "static/media/discountimg.jpg": "/static/media/discountimg.71e77e4a60df387f1116.jpg",
+    "static/media/quotesback.jpg": "/static/media/quotesback.3c21fd06e4d476592534.jpg",
+    "static/media/homemakeup2.png": "/static/media/homemakeup2.35fadaa3bc5118082c61.png",
+    "static/media/brushes.webp": "/static/media/brushes.e82cd09de71abcb39c77.webp",
+    "static/media/ab4.jpeg": "/static/media/ab4.c50069dcf1b25e2b6ef7.jpeg",
+    "static/media/seven.jpg": "/static/media/seven.8a64e97c0f114cd2bb96.jpg",
+    "static/media/pic2.jpeg": "/static/media/pic2.04457ca8af1f11bb99a3.jpeg",
+    "static/media/a.jpg": "/static/media/a.f206c811450cbfa32b35.jpg",
+    "static/media/pinkback.jpg": "/static/media/pinkback.b358eb7469738ebc6756.jpg",
+    "static/media/homemakeup6.png": "/static/media/homemakeup6.220ebd12b80bbff0cbb2.png",
+    "static/media/pic1.jpeg": "/static/media/pic1.220ebd12b80bbff0cbb2.jpeg",
+    "static/media/download.webp": "/static/media/download.f56e9412c07ceadacf90.webp",
+    "index.html": "/index.html",
+    "main.e31c361b.css.map": "/static/css/main.e31c361b.css.map",
+    "main.41509af4.js.map": "/static/js/main.41509af4.js.map",
+    "787.68ad8508.chunk.js.map": "/static/js/787.68ad8508.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e31c361b.css",
+    "static/js/main.41509af4.js"
+  ]
+}
