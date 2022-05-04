@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import './register.css';
 import { registerAction } from '../../redux/action/RegisterAction';
 import { Row, Col } from 'react-bootstrap';
@@ -37,7 +37,7 @@ const Register = () => {
       "password": inputs.password
     }, onSuccess));
     let localError: any = {};
-    const resUser = /^[a-zA-Z\-]+$/;
+    const resUser = /^[a-zA-Z]+$/;
     if (!inputs.username) {
       localError.errorUser = "*Please Enter valid user name";
     } else if (!resUser.test(inputs.username)) {

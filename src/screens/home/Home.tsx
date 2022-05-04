@@ -55,7 +55,7 @@ const Home = () => {
   }
   const validate = () => {
     let localError: any = {};
-    const resname = /^[a-zA-Z\-]+$/;
+    const resname = /^[a-zA-Z]+$/;
     if (!inputs.name) {
       localError.errorName = "*Please Enter Valid  Name";
     } else if (!resname.test(inputs.name)) {
@@ -73,7 +73,7 @@ const Home = () => {
     } else if (!resPhone.test(inputs.number)) {
       localError.errorNumber = "*Please Enter Only 10 digit";
     }
-    const resService = /^[a-zA-Z\-]+$/;
+    const resService = /^[a-zA-Z]+$/;
     if (!inputs.service) {
       localError.errorService = "*Please Enter valid Service";
     } else if (!resService.test(inputs.service)) {
@@ -173,7 +173,7 @@ const Home = () => {
       </div>
       <div className='quot'>
         <div className='name'>
-          <img src={client} /><strong>DANIEL BENTON</strong>
+          <img src={client} alt="a" /><strong>DANIEL BENTON</strong>
           <p>Blogger/Client</p>
         </div>
         <div className='review'>
@@ -182,22 +182,22 @@ const Home = () => {
       </div>
       <div className='makeupCard d-flex' >
         <div className='column w-25'>
-          <img src={homemakeup3} className="homemakeup3" />
+          <img src={homemakeup3} alt="a" className="homemakeup3" />
         </div>
         <div className='column  w-25'>
-          <img src={homemakeup4} className="homemakeup4" />
-          <img src={homemakeup5} className="homemakeup5" />
+          <img src={homemakeup4} alt="a" className="homemakeup4" />
+          <img src={homemakeup5} alt="a" className="homemakeup5" />
         </div>
         <div className='column w-25'>
-          <img src={homemakeup6} className="homemakeup6" />
+          <img src={homemakeup6} alt="a" className="homemakeup6" />
         </div>
         <div className='column w-25 d-flexbox'>
           <div className="col-2 d-flex">
-            <img src={homemakeup7} className="homemakeup7" />
-            <img src={homemakeup8} className="homemakeup8" />
+            <img src={homemakeup7}  alt="a" className="homemakeup7" />
+            <img src={homemakeup8} alt="a" className="homemakeup8" />
           </div>
           <div className="col-2 w-25 sev" >
-            <img src={seven} className="seven" />
+            <img src={seven} alt="a" className="seven" />
           </div>
         </div>
       </div>
@@ -207,7 +207,7 @@ const Home = () => {
       </div>
       <div className="card-group">
         <div className="card">
-          <img className="card-img-top" src={image1} alt="Card image cap" />
+          <img className="card-img-top" src={image1}  alt="a" />
           <div className="card-body">
             <i className="fa fa-picture-o" aria-hidden="true"></i>
             <h5 className="card-title">Tips from makeup artists you've never heard</h5><br /><br />
@@ -215,7 +215,7 @@ const Home = () => {
           </div>
         </div>
         <div className="card">
-          <img className="card-img-top" src={image2} alt="Card image cap" />
+          <img className="card-img-top" src={image2}  alt="a" />
           <div className="card-body">
             <i className="fa fa-file-text-o" aria-hidden="true"></i>
             <h5 className="card-title">Everything I learned from a professional makeup artist</h5><br /><br />
@@ -223,7 +223,7 @@ const Home = () => {
           </div>
         </div>
         <div className="card">
-          <img className="card-img-top" src={image3} alt="Card image cap" />
+          <img className="card-img-top" src={image3} alt="a" />
           <div className="card-body">
             <i className="fa fa-play" aria-hidden="true"></i>
             <h5 className="card-title">10- Makeup- artist tips that surprised(and delighted) us</h5><br /><br />
@@ -237,7 +237,7 @@ const Home = () => {
             return (
               <div className="col-3" key={item.id} >
                 <div className="card" style={{ "margin": "auto" }}>
-                  <img className="shopimg" src={`${URL}${item?.attributes?.productImage?.data?.attributes?.url}`} alt="Card image cap" />
+                  <img className="shopimg" src={`${URL}${item?.attributes?.productImage?.data?.attributes?.url}`}  alt="a" />
                   <div className='middle'>
                     <i className="fa fa-eye" aria-hidden="true" onClick={() => { navigate(`/productDetails/${item.id}`); window.scrollTo(0, 0) }}></i>
                     <i className="fa fa-heart" aria-hidden="true" onClick={() => navigate(`/favouriteitemlist/${user_id}`)}></i>
@@ -256,7 +256,7 @@ const Home = () => {
       </div>
       <div className='discount'>
         <div className='image-div'>
-          <img src={discountimg} alt='discount image' className='discountimg1' />
+          <img src={discountimg}  alt="a"className='discountimg1' />
         </div>
         <div className='formArea' >
           <h5 className='contform'>GET A QUOTE</h5>

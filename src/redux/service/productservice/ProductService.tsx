@@ -14,7 +14,6 @@ export const productFilterGetAPI = (cat: any) => {
     return axios.get(`/products?populate=productImage,category&filters[category]=${cat}`)
 }
 export const productPostAPI = (item: any) => {
-    const user_id = localStorage.getItem('user_details')
     return axios.put(`/products/${item.id}`, {
         data: {
             "productTitle": item?.attributes?.productTitle,

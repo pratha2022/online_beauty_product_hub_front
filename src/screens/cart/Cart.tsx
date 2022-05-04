@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import './cart.css'
 import shop12 from '../../images/shop12.jpg';
-import {useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { cartAction, cartDelete } from '../../redux/action/CartAction';
 const Cart = () => {
@@ -13,7 +13,7 @@ const Cart = () => {
   const user_id = localStorage.getItem('user_details')
   useEffect(() => {
     dispatch(cartAction(cartID))
-  }, []);
+  }, [cartID]);
   function handleDelete(id: any, item: any, qty: any, cartID: any) {
     dispatch(cartDelete(id, item, qty, cartID))
   }
@@ -24,7 +24,7 @@ const Cart = () => {
       </div>
       <div className='heading'>
         <h3>Shopping Cart</h3>
-        <p><a className='text'>Home</a> | Shoping Cart</p>
+        <p><a href='#' className='text'>Home</a> | Shoping Cart</p>
       </div>
       <div className='col-12 d-flex'>
         <div className='col-8'>
@@ -43,7 +43,7 @@ const Cart = () => {
                 total = total + totalprice;
                 return (
                   <tr key={item.id} >
-                    <td style={{ "width": "250px" }}><img className='shop5' src={`${URL}${item?.product?.data?.attributes?.productImage?.data?.attributes?.url}`} style={{ "height": "80px", "width": "80px", "border": "1px solid lightgray" }} />&emsp;{item?.product?.data?.attributes?.productTitle}</td>
+                    <td style={{ "width": "250px" }}><img className='shop5' alt="a" src={`${URL}${item?.product?.data?.attributes?.productImage?.data?.attributes?.url}`} style={{ "height": "80px", "width": "80px", "border": "1px solid lightgray" }} />&emsp;{item?.product?.data?.attributes?.productTitle}</td>
                     <td>{item?.product?.data?.attributes?.price}</td>
                     <td>{item.qty}</td>
                     <td>{totalprice}</td>

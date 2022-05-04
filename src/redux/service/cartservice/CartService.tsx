@@ -18,7 +18,7 @@ export const cartupdateAPI = (id: any, num: any, updatedata: any, cartdataid: an
     updatedata?.attributes?.product_list?.forEach((ele: any) => {
         if (ele?.product?.data?.id === id?.id) {
             product_list = product_list.map(ele1 => {
-                if (ele1.product == id.id)
+                if (ele1.product === id.id)
                     ele1.qty = ele1.qty + num
                 return ele1;
             })
@@ -37,7 +37,7 @@ export const cartPopulateAPI = (user_id: any) => {
 }
 export const orderplacedAPI = (cart: any) => {
     cart.map((item: any) => {
-        if (item.attributes.isOrderPlaced == false)
+        if (item.attributes.isOrderPlaced === false)
             return item.attributes.isOrderPlaced === true
     })
     const user_id = localStorage.getItem('user_details')

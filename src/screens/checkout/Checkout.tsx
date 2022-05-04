@@ -3,7 +3,7 @@ import '../../screens/checkout/checkout.css';
 import checkout from '../../assets/images/checkout.jpeg';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { cartAction, cartIdAction } from '../../redux/action/CartAction';
+import { cartAction} from '../../redux/action/CartAction';
 import { Row, Col } from 'react-bootstrap';
 const Checkout = () => {
   const [inputs, setInputs]: any = useState({
@@ -38,7 +38,7 @@ const Checkout = () => {
   const checkout1 = useSelector((state: any) => state?.cart?.cart)
   useEffect(() => {
     dispatch(cartAction(data))
-  }, []);
+  }, [data]);
   const checkedOut = () => {
     const validationErrors = validate(inputs);
     const noErrors = Object.keys(validationErrors).length === 0;
@@ -55,13 +55,13 @@ const Checkout = () => {
     } else if (!resEmail.test(inputs.email)) {
       localError.errorEmail = "*Please Enter Valid Email ";
     }
-    const resFname = /^[a-zA-Z\-]+$/;
+    const resFname = /^[a-zA-Z]+$/;
     if (!inputs.fname) {
       localError.errorFname = "*Please Enter Valid First Name";
     } else if (!resFname.test(inputs.fname)) {
       localError.errorFname = "*Please Enter Only Text";
     }
-    const resLname = /^[a-zA-Z\-]+$/;
+    const resLname = /^[a-zA-Z]+$/;
     if (!inputs.lname) {
       localError.errorLname = "*Please Enter Valid Last Name";
     } else if (!resLname.test(inputs.lname)) {
@@ -102,15 +102,15 @@ const Checkout = () => {
   return (
     <div>
       <div>
-        <img src={checkout} className="contact1" />
+        <img src={checkout} alt="a" className="contact1" />
       </div>
       <div className='heading'>
         <h3>Checkout</h3>
-        <p><a className='text'>Home</a> | Checkout</p>
+        <p><a href="#" className='text'>Home</a> | Checkout</p>
       </div>
       <div className='checkout-container d-flex'>
         <div className='col-5' style={{ 'marginLeft': '50px' }}>
-          <p>Already have an account? <a className='text' onClick={() => navigate('/login')} aria-hidden="true" >Login</a></p>
+          <p>Already have an account? <a href="#" className='text' onClick={() => navigate('/login')} aria-hidden="true" >Login</a></p>
           <form>
             <Row>
               <Col>Email:*</Col>
@@ -225,7 +225,7 @@ const Checkout = () => {
         </div>
         <div style={{ "marginLeft": "250px" }}>
           <div className="card card-blue p-3 mb-3" >
-            <a style={{ color: 'black', }}><strong>YOUR ORDER</strong></a><br />
+            <a href="#" style={{ color: 'black', }}><strong>YOUR ORDER</strong></a><br />
             <p style={{ color: 'black' }}>
               Enter Coupon Code. It Will Be Applied At Checkout
             </p>
@@ -244,8 +244,6 @@ const Checkout = () => {
                 )
 
               })}
-
-
               <hr />
               <span>Total: ₹{total} </span><br />
               <hr />

@@ -18,7 +18,7 @@ const About = () => {
       </div>
       <div className='heading'>
         <h3>About us</h3>
-        <p ><a className='text'>Home</a> | About</p>
+        <p ><a href='#' className='text'>Home</a> | About</p>
       </div>
       <div className="clearfix">
         <img src={brush} className="col-md-6 float-md-end mb-3 ms-md-3" alt="..." />
@@ -31,7 +31,7 @@ const About = () => {
         <h2 style={{ "fontStyle": "oblique" }}>MAKEUP ARTIST</h2>
         <div className="cards">
           <div className="card">
-            <img className="card-img-top" src={ab1} alt="Card image" />
+            <img className="card-img-top" src={ab1} alt="a" />
             <div className="card-body">
               <h5 className="card-title">Olivia Rhodes</h5>
               <p className="card-text">Makeup</p>
@@ -43,10 +43,10 @@ const About = () => {
               <h4 className="card-title">Laura Stephens</h4>
               <p className="card-text">Hair Stylist</p>
             </div>
-            <img className="card-img-bottom" src={ab2} alt="Card image" />
+            <img className="card-img-bottom" src={ab2} alt="a" />
           </div>
           <div className="card">
-            <img className="card-img-top" src={ab3} alt="Card image" />
+            <img className="card-img-top" src={ab3} alt="a" />
             <div className="card-body">
               <h5 className="card-title">Olivia Rhodes</h5>
               <p className="card-text">Makeup</p>
@@ -58,7 +58,7 @@ const About = () => {
               <h4 className="card-title">Laura Stephens</h4>
               <p className="card-text">Hair Stylist</p>
             </div>
-            <img className="card-img-bottom" src={ab4} alt="Card image" />
+            <img className="card-img-bottom" src={ab4} alt="a" />
           </div>
         </div>
       </div>

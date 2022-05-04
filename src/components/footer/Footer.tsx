@@ -34,29 +34,29 @@ const Footer = () => {
       </div>
       <div>
         <img className='logo' src={logo} /><br />
-        <h6>Follow us on <a>@makeupartist</a></h6>
+        <h6>Follow us on <a href='#'>@makeupartist</a></h6>
       </div>
       <div className="container">
         <div className="row">
           <div className="col">
-            <img src={pic1} alt="z" />
+            <img src={pic1} alt="..." />
           </div>
           <div className="col">
-            <img src={pic2} alt="z" />
+            <img src={pic2} alt="..." />
           </div>
           <div className="col">
-            <img src={pic3} alt="z"/>
+            <img src={pic3} alt="..."/>
           </div>
           <div className="col">
-            <img src={pic4} alt="z"/>
+            <img src={pic4} alt="..."/>
           </div>
           <div className="col">
-            <img src={pic5} alt="z"/>
+            <img src={pic5} alt="..."/>
           </div>
         </div>
       </div>
       <div className='footerline'>
-        <p>Copyright © {year} All rights reserved | This template is made with 💗 by <a>Pratha</a> </p>
+        <p>Copyright © {year} All rights reserved | This template is made with 💗 by <a href='#'>Pratha</a> </p>
         <div className='social'>
           <i className="fa fa-facebook footercard" aria-hidden="true"  /> &emsp;
           <i className="fa fa-twitter footercard" aria-hidden="true"  />&emsp;

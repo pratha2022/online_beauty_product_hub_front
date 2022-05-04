@@ -2,9 +2,9 @@ import './shop.css'
 import { useEffect, useState } from 'react'
 import eyes from '../../images/abouthead.jpg'
 import Select from 'react-select'
-import { useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
-import { categoryAction, priceFilterAction, productAction, productFavouriteAction, shopAction } from '../../redux/action/ProductAction'
+import { categoryAction, priceFilterAction, productFavouriteAction, shopAction } from '../../redux/action/ProductAction'
 import { catAction } from '../../redux/action/CatAction'
 
 const Shop = () => {
@@ -69,7 +69,7 @@ const Shop = () => {
       setPopularityFilter({ 'value': pop, 'label': pop })
     }
 
-  }, []);
+  }, [pop]);
   const handleChange = (event: any) => {
     const queryParam = {
       category: event.id + " " + event.value,
@@ -129,7 +129,7 @@ const Shop = () => {
       </div>
       <div className='heading'>
         <h3>Shop</h3>
-        <p><a className='text'>Home</a> | Shop</p>
+        <p><a href='#' className='text'>Home</a> | Shop</p>
       </div>
       <div className='card-group'>
         <div className='col-3' style={{ fontSize: 'x-large' }}><strong>OUR PRODUCTS</strong></div>
@@ -148,7 +148,7 @@ const Shop = () => {
           return (
             <div className="col-3" key={item.id} >
               <div className="card" style={{ "margin": "auto" }}>
-                <img className="shopimg" src={`${URL}${item?.attributes?.productImage?.data?.attributes?.url}`} alt="Card image cap" />
+                <img className="shopimg" src={`${URL}${item?.attributes?.productImage?.data?.attributes?.url}`} alt="a" />
                 <div className='middle'>
                   <i className="fa fa-eye" aria-hidden="true" onClick={() => { navigate(`/productDetails/${item.id}`); window.scrollTo(0, 0) }}></i>
                   <i className="fa fa-heart" aria-hidden="true" onClick={() => addtoFav(item)}></i>

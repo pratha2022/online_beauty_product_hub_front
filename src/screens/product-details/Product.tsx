@@ -30,11 +30,11 @@ const Product = () => {
     useEffect(() => {
         dispatch(productAction(id?.id))
         dispatch(cartAction(cartdata))
-    }, []);
+    }, [cartdata]);
     const product = useSelector((state: any) => state?.product?.product)
     localStorage.setItem('location', location.pathname);
     const postproduct = () => {
-        if (cartdata == '') {
+        if (cartdata === '') {
             dispatch(cartId(product, num, onSuccess));
         }
         else {
@@ -52,7 +52,7 @@ const Product = () => {
             </div>
             <div className='heading'>
                 <h3>Product Details</h3>
-                <p style={{ "fontSize": "13px " }}><a className='text'>Home</a> | Product</p>
+                <p style={{ "fontSize": "13px " }}><a href="#" className='text'>Home</a> | Product</p>
             </div>
             <div className='rowProduct d-flex' style={{ 'marginBottom': '20px' }}>
                 <div className='col-6'>

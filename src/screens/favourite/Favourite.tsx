@@ -13,7 +13,7 @@ const Favourite = () => {
     const URL = "http://192.168.10.167:1337";
     useEffect(() => {
         dispatch(productFavouriteGetAction())
-    }, []);
+    }, [dispatch]);
     const postProduct = () => {
         navigate('/productlist')
         window.scrollTo(0, 0)
@@ -28,7 +28,7 @@ const Favourite = () => {
             </div>
             <div className='heading'>
                 <h3>Favourite</h3>
-                <p><a className='text'>Home</a> | Favourite</p>
+                <p><a href="#"  className='text'>Home</a> | Favourite</p>
             </div>
             <div className='col-12 d-flex'>
                 <div className='col-8'>

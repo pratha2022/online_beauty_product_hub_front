@@ -27,7 +27,7 @@ const Contact = () => {
   }
   const validate = () => {
     let localError: any = {};
-    const resname = /^[a-zA-Z\-]+$/;
+    const resname = /^[a-zA-Z]+$/;
     if (!inputs.name) {
       localError.errorName = "*Please Enter Valid Name";
     } else if (!resname.test(inputs.name)) {
@@ -45,7 +45,7 @@ const Contact = () => {
     } else if (!resPhone.test(inputs.number)) {
       localError.errorNumber = "*Please Enter Only 10 Digit";
     }
-    const resService = /^[a-zA-Z\-]+$/;
+    const resService = /^[a-zA-Z]+$/;
     if (!inputs.service) {
       localError.errorService = "*Please Enter valid Service";
     } else if (!resService.test(inputs.service)) {
@@ -74,26 +74,26 @@ const Contact = () => {
       </div>
       <div className='heading'>
         <h3>Contact</h3>
-        <p><a className='text'>Home</a> | Contact</p>
+        <p><a href="#"  className='text'>Home</a> | Contact</p>
       </div>
       <div className="mapcontainer" >
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7343.955674674419!2d72.53230235000001!3d23.02458595000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1646982119322!5m2!1sen!2sin" ></iframe>
+        <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7343.955674674419!2d72.53230235000001!3d23.02458595000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1646982119322!5m2!1sen!2sin" ></iframe>
       </div>
       <div className='contdiv'>
         <div className='col-4' >
           <div className='col-3 add1'>
             <div className='ficon'> <i className="fa fa-map-marker" aria-hidden="true"></i></div>
-            <h5><a href='https://maps.google.com/' target='_blank'>ADDRESS</a></h5>
+            <h5><a href='https://maps.google.com/' target='#'>ADDRESS</a></h5>
             <p>509 Mrytle Ave, Brooklyn, NY 11205, USA</p>
           </div>
           <div className='col-3 add1'>
             <div className='ficon'> <i className="fa fa-phone" aria-hidden="true"></i></div>
-            <h5><a href="skype:echo123?call" target='_blank'>PHONE</a></h5>
+            <h5><a href="skype:echo123?call" target='#'>PHONE</a></h5>
             <p>+1 718-783-1936 &nbsp;+1 718-783-1966 </p>
           </div>
           <div className='col-3 add1'>
             <div className='ficon'> <i className="fa fa-envelope" aria-hidden="true"></i></div>
-            <h5><a href='https://www.gmail.com' target='_blank'>EMAIL</a></h5>
+            <h5><a href='https://www.gmail.com' target='#'>EMAIL</a></h5>
             <p>makeup.artist@gmail.com</p>
           </div>
         </div>
