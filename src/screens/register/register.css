@@ -1,0 +1,25 @@
+.btn-register {
+    color: white;
+    background-color: palevioletred;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.container-h-100 {
+    margin-top: 130px;
+    margin-left: 200px;
+}
+
+.heading-text1 {
+    margin-top: -50px;
+    font-size: x-large;
+}
+
+.img-fluid {
+    margin-left: 70px;
+}
+
+.register-header {
+    margin-top: 40px;
+}

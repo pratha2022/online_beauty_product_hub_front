@@ -1,0 +1,27 @@
+.counterdiv {
+    margin-right: 250px;
+    height: 40px;
+}
+
+.counterinput {
+    display: flex;
+    width: 120px;
+}
+
+.input-group-prepend button {
+    color: white;
+    height: 40px;
+    border: none;
+    background-color: palevioletred;
+    border-color: grey;
+    width: 30px;
+}
+
+.countervalue {
+    height: 40px;
+    text-align: center;
+    display: flex;
+    margin: 0px;
+    width: 40px;
+    border: 0.3px solid lightgray;
+}

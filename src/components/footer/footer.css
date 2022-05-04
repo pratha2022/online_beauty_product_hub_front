@@ -1,0 +1,56 @@
+ .footer {
+     background-color: rgb(248, 245, 245);
+     width: 100%;
+ }
+
+ .logo {
+     height: 50px;
+     margin-top: 20px;
+ }
+
+ .col img {
+     width: 200px;
+     height: 220px;
+ }
+
+ .footerline {
+     margin-left: 100px;
+     margin-top: 10px;
+     display: flex;
+ }
+
+ .footerline .fa {
+     font-size: 17px;
+ }
+
+ .footerline p {
+     color: gray;
+ }
+
+ .social {
+     margin-left: 400px;
+     text-align: flex-end;
+     cursor: pointer;
+ }
+
+ .card-address .card {
+     width: '32%';
+     height: 100px;
+     margin-top: 40px;
+     margin-bottom: 40px;
+ }
+
+ .fa {
+     color: palevioletred;
+     font-size: 25px;
+     margin-top: -25px;
+    cursor: pointer;
+ }
+
+ .footercard {
+     color: black;
+ }
+
+ h6 {
+     font: unset;
+ }

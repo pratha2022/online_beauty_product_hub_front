@@ -1,0 +1,47 @@
+table {
+    width: -webkit-fill-available;
+}
+
+.thead {
+    width: 100%;
+    margin-bottom: 100px;
+    border-bottom: 1px solid lightgray;
+}
+
+tbody {
+    width: 100%;
+}
+
+.book-checkout {
+    color: white;
+    background-color: palevioletred;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 20px 5px 30px;
+}
+
+.book-apply {
+    color: white;
+    background-color: palevioletred;
+    border: none;
+    border-radius: 25px;
+    margin-left: -40px;
+    font-size: inherit;
+    padding: 5px 20px 5px 20px;
+}
+
+.totalDiv {
+    margin-bottom: 40px;
+}
+
+.totaldiv2 {
+    background-color: lightgrey;
+    padding: 20px;
+    word-spacing: 4px;
+}
+
+.promoinput {
+    padding: 5px 5px 5px 15px;
+    border-radius: 25px;
+    border: none;
+}

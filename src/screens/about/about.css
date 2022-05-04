@@ -1,0 +1,164 @@
+.about {
+    width: 100%;
+    margin-right: 40px;
+}
+
+.eyes {
+    width: 100%;
+    height: 120px;
+}
+
+.heading {
+    width: fit-content;
+    background-color: white;
+    margin-left: 10%;
+    justify-content: center;
+    margin-top: -63px;
+    padding: 7px 95px 0 25px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.heading p {
+    font-size: 13px;
+}
+
+.face {
+    display: flex;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url("../../images/a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px;
+    background-blend-mode: hue;
+    background-position: center;
+    position: relative;
+}
+
+.sec {
+    margin: 50px;
+}
+
+.brush {
+    height: 250px;
+    margin-left: 30%;
+}
+
+.contact {
+    background-color: palevioletred;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px 40px 10px 40px;
+    color: white;
+}
+
+.team {
+    background-color: rgb(240, 228, 230);
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    padding: 20px;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    padding: 15px;
+    width: fit-content;
+    height: 350px;
+}
+
+.card img {
+    width: 250px;
+    height: 200px;
+}
+
+.card p {
+    color: palevioletred;
+}
+
+.quot {
+    padding-top: 70px;
+    background-image: url("../../images/quotesback.jpg");
+    background-size: contain;
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    height: 300px;
+}
+
+.quot img {
+    width: 55px;
+    border-radius: 25px;
+    text-align: start;
+}
+
+.name p {
+    margin-top: -20px;
+    margin-left: 30px;
+    color: palevioletred;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.review p {
+    text-align: justify;
+    margin-left: 25%;
+    font-size: small;
+}
+
+.name {
+    text-align: center;
+    margin-left: -35%;
+}
+
+.endblock {
+    display: flex;
+    width: 100%;
+    background-image: url("../../images/makeupback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.searchbar {
+    margin-top: 20px;
+    text-align: end;
+    margin-left: 20%;
+}
+
+.searchbar input {
+    border: white;
+    padding: 7px;
+}
+
+.subs {
+    margin-top: 17px;
+    margin-left: 10%;
+    font-size: larger;
+    color: white;
+    font-style: italic;
+}
+
+.emailinput {
+    background-color: whitesmoke;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid white;
+    margin-right: 6px;
+}
+
+.btnsubs {
+    border-radius: 20px 20px 20px 20px;
+    width: 100px;
+    padding: 7px;
+    margin-left: -40px;
+    background-color: palevioletred;
+    color: white;
+}

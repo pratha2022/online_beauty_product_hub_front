@@ -1,0 +1,8 @@
+.ordertable {
+    border: 1px solid black;
+}
+
+.orderbox {
+    margin: 50px;
+    line-height: 50px;
+}

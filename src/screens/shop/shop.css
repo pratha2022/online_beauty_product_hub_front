@@ -1,0 +1,88 @@
+.shop {
+    width: 100%;
+    background-color: white;
+}
+
+.shopimg {
+    width: 100%;
+    border: 1px solid rgb(214, 211, 211);
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card:hover img {
+    border: 5px double rgb(235, 151, 214);
+    opacity: 0.7;
+}
+
+.card:hover .middle {
+    opacity: 1;
+}
+
+.card-text:hover {
+    color: crimson;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card button:hover {
+    opacity: 0.7;
+    background-color: black;
+    color: white;
+}
+
+.fa-eye, .fa-heart, .fa-shopping-cart {
+    color: rgb(235, 151, 214);
+    font-size: 17px;
+
+
+}
+
+.middle {
+    color: black;
+    width: 20px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container12 {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container12 img {
+    width: 100%;
+    height: auto;
+}
+
+.container12 .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container12 .btn:hover {
+    background-color: black;
+}
+
+.filters {
+    margin-left: 15px;
+    margin-right: 15px;
+}

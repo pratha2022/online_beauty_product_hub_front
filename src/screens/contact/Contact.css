@@ -1,0 +1,91 @@
+.contacts {
+    width: 100%;
+}
+
+.sec {
+    margin: 50px;
+}
+
+.send-message {
+    background-color: #300909;
+    color: white;
+    margin-right: 76%;
+}
+
+.contact-form {
+margin-left: 50px;  
+    width: 62%;
+    height: 350px;
+    font-size: larger;
+    padding: 20px;
+
+}
+
+.add1 {
+    margin: 20px;
+    width: auto;
+    border: groove;
+    height: 150px;
+}
+.add1 h5 a{
+    color: black;
+}
+.img1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    position: relative;
+    right: 140px;
+    bottom: -30px;
+}
+
+.mapcontainer iframe {
+    padding-bottom: 30px;
+    height: 350px;
+    width: 80%;
+
+}
+
+.contdiv {
+    
+    margin-left: 110px;
+    display: flex;
+
+}
+
+.ficon {
+    
+    width: 40px;
+    background-color: palevioletred;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    right: 19px;
+    top: 30%;
+}
+.ficon i{
+    color: white;
+    font-size:x-large;
+}
+.conform {
+
+    text-align: left;
+    color: palevioletred;
+    font-family: revert;
+    margin-bottom: 20px;
+}
+.form-control{
+    margin: 5px;
+    width: 47%;
+    display: inline;
+}
+.contact-form-row textarea{
+    margin-right: 112px;
+    width: -webkit-fill-available;
+
+}
+.contactsubmitbtn, .contactsubmitbtn input{
+    width: 200px;
+    text-align: center;
+}

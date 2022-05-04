@@ -1,0 +1,54 @@
+.quote {
+    background-color: palevioletred;
+    padding: 7px;
+    width: 130px;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.header {
+    width: 100%;
+}
+
+.navi {
+    display: flex;
+}
+
+.navbar-nav {
+    padding-left: 330px;
+}
+
+.navbar-nav a {
+    margin-right: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.log {
+    margin-left: 30px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.fa-search {
+    margin-top: 5px;
+    font-size: 20px;
+    color: black;
+    padding-left: 230px;
+}
+
+.fa-sign-out, .fa-sign-in {
+    color: black;
+    margin-top: 4px;
+    font-size: 30px;
+}
+
+a.header-link.active {
+    background-color: palevioletred;
+    padding: 8px;
+    border-radius: 25px;
+    color: white;
+}
