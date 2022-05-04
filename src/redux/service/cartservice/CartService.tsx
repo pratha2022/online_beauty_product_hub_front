@@ -23,7 +23,7 @@ export const cartupdateAPI = (id: any, num: any, updatedata: any, cartdataid: an
                 return ele1;
             })
         } else {
-            product_list.push({ product: ele?.product?.data?.id, qty: ele?.qty })
+           return product_list.push({ product: ele?.product?.data?.id, qty: ele?.qty })
         }
     })
     let data: any = { user_id, product_list, isOrderPlaced: true }
@@ -37,8 +37,11 @@ export const cartPopulateAPI = (user_id: any) => {
 }
 export const orderplacedAPI = (cart: any) => {
     cart.map((item: any) => {
-        if (item.attributes.isOrderPlaced === false)
+        if (item.attributes.isOrderPlaced === false){
             return item.attributes.isOrderPlaced = true
+        }
+        else 
+            return item
     })
     const user_id = localStorage.getItem('user_details')
    return axios.get(`/carts?populate=user_id,product_list.product.productImage,product_list.product&filters[user_id]=${user_id}`)
