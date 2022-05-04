@@ -28,7 +28,7 @@ const Favourite = () => {
             </div>
             <div className='heading'>
                 <h3>Favourite</h3>
-                <p><a href="#"  className='text'>Home</a> | Favourite</p>
+                <p><a href="https://maps.google.com/"  className='text'>Home</a> | Favourite</p>
             </div>
             <div className='col-12 d-flex'>
                 <div className='col-8'>
@@ -44,7 +44,7 @@ const Favourite = () => {
                                 productFavourite && productFavourite.length > 0 && productFavourite.map((item: any) => {
                                     return (
                                         <tr key={item.id}>
-                                            <td><img src={`${URL}${item?.attributes?.productImage?.data?.attributes?.url}`} style={{ height: '100px', width: '100px', border: '1px solid lightgrey' }} />
+                                            <td><img alt="a" src={`${URL}${item?.attributes?.productImage?.data?.attributes?.url}`} style={{ height: '100px', width: '100px', border: '1px solid lightgrey' }} />
                                                 &emsp;{item?.attributes?.productTitle}
                                             </td>
                                             <td>{item?.attributes?.price}</td>

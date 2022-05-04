@@ -33,30 +33,30 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <img className='logo' src={logo} /><br />
-        <h6>Follow us on <a href='#'>@makeupartist</a></h6>
+        <img className='logo' src={logo} alt="a" /><br />
+        <h6>Follow us on <a href='https://maps.google.com/'>@makeupartist</a></h6>
       </div>
       <div className="container">
         <div className="row">
           <div className="col">
-            <img src={pic1} alt="..." />
+            <img src={pic1} alt="a" />
           </div>
           <div className="col">
-            <img src={pic2} alt="..." />
+            <img src={pic2} alt="a" />
           </div>
           <div className="col">
-            <img src={pic3} alt="..."/>
+            <img src={pic3} alt="a"/>
           </div>
           <div className="col">
-            <img src={pic4} alt="..."/>
+            <img src={pic4} alt="a"/>
           </div>
           <div className="col">
-            <img src={pic5} alt="..."/>
+            <img src={pic5} alt="a"/>
           </div>
         </div>
       </div>
       <div className='footerline'>
-        <p>Copyright © {year} All rights reserved | This template is made with 💗 by <a href='#'>Pratha</a> </p>
+        <p>Copyright © {year} All rights reserved | This template is made with 💗 by <a href='https://maps.google.com/'>Pratha</a> </p>
         <div className='social'>
           <i className="fa fa-facebook footercard" aria-hidden="true"  /> &emsp;
           <i className="fa fa-twitter footercard" aria-hidden="true"  />&emsp;

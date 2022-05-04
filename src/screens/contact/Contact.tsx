@@ -74,7 +74,7 @@ const Contact = () => {
       </div>
       <div className='heading'>
         <h3>Contact</h3>
-        <p><a href="#"  className='text'>Home</a> | Contact</p>
+        <p><a href="https://maps.google.com/"  className='text'>Home</a> | Contact</p>
       </div>
       <div className="mapcontainer" >
         <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7343.955674674419!2d72.53230235000001!3d23.02458595000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1646982119322!5m2!1sen!2sin" ></iframe>

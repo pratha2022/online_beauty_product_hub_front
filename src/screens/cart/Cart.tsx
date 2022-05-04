@@ -13,7 +13,7 @@ const Cart = () => {
   const user_id = localStorage.getItem('user_details')
   useEffect(() => {
     dispatch(cartAction(cartID))
-  }, [cartID]);
+  }, [dispatch,cartID]);
   function handleDelete(id: any, item: any, qty: any, cartID: any) {
     dispatch(cartDelete(id, item, qty, cartID))
   }
@@ -24,7 +24,7 @@ const Cart = () => {
       </div>
       <div className='heading'>
         <h3>Shopping Cart</h3>
-        <p><a href='#' className='text'>Home</a> | Shoping Cart</p>
+        <p><a href='https://maps.google.com/' className='text'>Home</a> | Shoping Cart</p>
       </div>
       <div className='col-12 d-flex'>
         <div className='col-8'>

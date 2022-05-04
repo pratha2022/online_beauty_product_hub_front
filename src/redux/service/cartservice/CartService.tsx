@@ -41,7 +41,7 @@ export const orderplacedAPI = (cart: any) => {
             return item.attributes.isOrderPlaced === true
     })
     const user_id = localStorage.getItem('user_details')
-    axios.get(`/carts?populate=user_id,product_list.product.productImage,product_list.product&filters[user_id]=${user_id}`)
+   return axios.get(`/carts?populate=user_id,product_list.product.productImage,product_list.product&filters[user_id]=${user_id}`)
 }
 export const cartDeleteAPI = (id: any, item: any, qty: any, cartID: any) => {
     const ID = cartID[0].id;

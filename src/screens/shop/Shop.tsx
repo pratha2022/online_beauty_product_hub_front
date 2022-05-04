@@ -69,7 +69,7 @@ const Shop = () => {
       setPopularityFilter({ 'value': pop, 'label': pop })
     }
 
-  }, [pop]);
+  }, [dispatch,pop,cat, categ, catval,pric]);
   const handleChange = (event: any) => {
     const queryParam = {
       category: event.id + " " + event.value,

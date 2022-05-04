@@ -34,7 +34,7 @@ const Home = () => {
   let query = `&pagination[withCount]=true&pagination[page]=1&pagination[pageSize]=4`;
   useEffect(() => {
     dispatch(shopQuery(query))
-  }, []);
+  }, [dispatch, query]);
   const [inputs, setInputs] = useState({
     name: '',
     number: '',

@@ -10,7 +10,7 @@ const OrderPlaced = () => {
     let total = 0;
     useEffect(() => {
         dispatch(cartAction(order))
-    }, [order])
+    }, [dispatch,order])
 
     const URL = "http://192.168.10.167:1337";
     return (
@@ -20,7 +20,7 @@ const OrderPlaced = () => {
             </div>
             <div className='heading'>
                 <h4>Order Placed</h4>
-                <p style={{ "fontSize": "13px " }}><a href="#" className='text'>Home</a> | Order Placed</p>
+                <p style={{ "fontSize": "13px " }}><a href="https://maps.google.com/" className='text'>Home</a> | Order Placed</p>
             </div>
             <div className="orderbox">
                 <div>

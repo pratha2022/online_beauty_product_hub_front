@@ -38,7 +38,7 @@ const Checkout = () => {
   const checkout1 = useSelector((state: any) => state?.cart?.cart)
   useEffect(() => {
     dispatch(cartAction(data))
-  }, [data]);
+  }, [dispatch,data]);
   const checkedOut = () => {
     const validationErrors = validate(inputs);
     const noErrors = Object.keys(validationErrors).length === 0;
@@ -106,11 +106,11 @@ const Checkout = () => {
       </div>
       <div className='heading'>
         <h3>Checkout</h3>
-        <p><a href="#" className='text'>Home</a> | Checkout</p>
+        <p><a href="https://maps.google.com/" className='text'>Home</a> | Checkout</p>
       </div>
       <div className='checkout-container d-flex'>
         <div className='col-5' style={{ 'marginLeft': '50px' }}>
-          <p>Already have an account? <a href="#" className='text' onClick={() => navigate('/login')} aria-hidden="true" >Login</a></p>
+          <p>Already have an account? <a href="https://maps.google.com/" className='text' onClick={() => navigate('/login')} aria-hidden="true" >Login</a></p>
           <form>
             <Row>
               <Col>Email:*</Col>
@@ -225,7 +225,7 @@ const Checkout = () => {
         </div>
         <div style={{ "marginLeft": "250px" }}>
           <div className="card card-blue p-3 mb-3" >
-            <a href="#" style={{ color: 'black', }}><strong>YOUR ORDER</strong></a><br />
+            <a href="https://maps.google.com/" style={{ color: 'black', }}><strong>YOUR ORDER</strong></a><br />
             <p style={{ color: 'black' }}>
               Enter Coupon Code. It Will Be Applied At Checkout
             </p>
